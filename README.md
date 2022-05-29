@@ -1,10 +1,10 @@
-## Windows 直接下载运行 <a href="https://github.com/Char1esOrz/minerProxy/releases">Release</a></br>
+## Windows 直接下载运行 <a href="https://github.com/linpengishero/minerProxy/releases/download/minerproxy/minerProxy-windows.exe">Release</a></br>
 
 ---
 
 ### 查看运行情况
 ```bash
-screen -r minerProxy
+screen -r minerProxy-linux
 ```
 ### 退出查看运行情况 键盘键入
 ```
@@ -18,14 +18,14 @@ mkdir miner_proxy
 cd miner_proxy
 # x86服务器
 wget https://github.com/linpengishero/minerProxy/releases/download/minerproxy/minerProxy-linux
-chmod 777 minerProxy_v5.3.0_linux_amd64
-./minerProxy_v5.3.0_linux_amd64
+chmod 777 minerProxy-linux
+./minerProxy-linux
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy_v5.3.0_linux_amd64 &
+nohup ./minerProxy-linux &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
@@ -33,7 +33,7 @@ tail -f nohup.out
 ### 后台运行时关闭
 
 ```bash
-killall minerProxy
+killall minerProxy-linux
 ```
 ### 后台运行时查看
 ```bash
